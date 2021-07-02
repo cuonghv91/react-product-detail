@@ -1,10 +1,19 @@
 import * as React from 'react'
-import styles from './styles.module.css'
+import { StyleSheet, css } from 'aphrodite'
 
-interface Props {
-  text: string
+const styles = StyleSheet.create({
+  title: {
+    backgroundColor: 'blue'
+  }
+})
+
+export interface ReactProductDetailProps {
+  position?: string
 }
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export const ReactProductDetail: React.FC<ReactProductDetailProps> = ({
+  position = 'bottom'
+}) => {
+  console.log(position)
+  return <h1 className={css(styles.title)}>Hello Aphsdsdrodite!</h1>
 }

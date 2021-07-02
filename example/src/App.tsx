@@ -1,10 +1,9 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-product-detail'
-import 'react-product-detail/dist/index.css'
+import { ReactProductDetail } from 'react-product-detail'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <ReactProductDetail />
 }
 
 export default App
