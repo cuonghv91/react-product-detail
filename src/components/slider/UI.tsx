@@ -78,7 +78,13 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(0,0,0,0.05)'
+    backgroundColor: 'rgba(0,0,0,0.05)',
+    cursor: 'pointer',
+
+    ':hover': {
+      border: '1px solid red',
+      boxSizing: 'border-box'
+    }
   }
 })
 
@@ -131,6 +137,7 @@ const UI: React.FC<UIProps> = ({
             }}
           >
             <div
+              data-testid='dynamic-img'
               style={{
                 width: `90%`,
                 height: `90%`,

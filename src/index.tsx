@@ -15,5 +15,9 @@ export const ReactProductDetail: React.FC<ReactProductDetailProps> = ({
   position = 'bottom'
 }) => {
   console.log(position)
-  return <h1 className={css(styles.title)}>Hello Aphsdsdrodite!</h1>
+  return (
+    <h1 className={css(styles.title)}>
+      <button data-testid='test'>type</button>
+    </h1>
+  )
 }
